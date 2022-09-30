@@ -26,6 +26,7 @@ html {
   --work-overlay-bgc: rgba(33, 150, 243, 0.9);
   --backdrop-bgc: rgba(0, 0, 0, 0.2);
   --modal-bgc: #ffffff;
+  --btn-hover-color: #188ce8;
 }
 h1,
 h2,
@@ -244,7 +245,7 @@ header .contacts > li:not(:first-child) {
 }
 .hero-button-link:hover,
 .hero-button-link:focus {
-  background-color: #188ce8;
+  background-color: var(--btn-hover-color);
 }
 
 /*advantage*/
@@ -583,7 +584,10 @@ footer .logo-link {
   align-items: center;
   cursor: pointer;
 }
-
+.submit_btn:hover,
+.submit_btn:focus {
+  background-color: var(--btn-hover-color);
+}
 .submit_btn svg {
   width: 24px;
   height: 24px;
@@ -806,6 +810,7 @@ footer .logo-link {
 }
 
 .client-input:focus,
+.input-subscribe:focus,
 .client-text-area:focus {
   border-color: var(--link-color);
 }
@@ -821,6 +826,7 @@ footer .logo-link {
   margin-top: 4px;
 }
 .client-input,
+.input-subscribe,
 .client-text-area {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -872,5 +878,5 @@ footer .logo-link {
 }
 .send-btn:hover,
 .send-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--btn-hover-color);
 }
