@@ -550,6 +550,10 @@ footer .logo-link {
   color: var(--footer-color);
 }
 
+.input-subscribe {
+  color: var(--footer-color);
+  padding-left: 16px;
+}
 .subscribe_form_input p {
   display: flex;
   flex-direction: column;
@@ -577,6 +581,7 @@ footer .logo-link {
   margin-top: 52px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .submit_btn svg {
