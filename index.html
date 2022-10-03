@@ -202,7 +202,6 @@
                     </li>
                   </ul>
                 </div>
-
               </div>
             </section>
           </li>
@@ -246,7 +245,6 @@
                     </li>
                   </ul>
                 </div>
-
               </div>
             </section>
           </li>
@@ -290,7 +288,6 @@
                     </li>
                   </ul>
                 </div>
-
               </div>
             </section>
           </li>
@@ -443,8 +440,8 @@
       </div>
       <div class="subscribe">
         <form name="subscribe_form" autocomplete="on" novalidate class="subscribe_form">
-          <label class="subscribe_form_input">
-            <p class="subscribe_text">Підпишіться на розсилку</p>
+          <label class="subscribe_form_input subscribe_text">
+            <span class="subscribe_text">Підпишіться на розсилку</span>
             <input type="email" name="email" placeholder="E-mail" class="input-subscribe" />
           </label>
           <button type="submit" class="submit_btn">Підписатися
@@ -453,6 +450,7 @@
               </use>
             </svg>
           </button>
+        </form>
       </div>
     </div>
   </footer>
@@ -469,35 +467,42 @@
       <div class="order-service">
         <h2 class="visually-hidden">Замовити послугу</h2>
         <p class="">Залиште свої дані, ми вам передзвонимо</p>
-        <label for="client-name" class="client-label">Ім'я
-          <input type="text" name="client-name" id="client-name" class="client-input">
+        <label class="client-label">Ім'я
+          <input type="text" name="client-name" class="client-input">
           <svg class="input-icon">
             <use href="./images/icons.svg#name"></use>
           </svg>
         </label>
-        <label for="client-tel" class="client-label">Телефон
-          <input type="tel" name="client-tel" id="client-tel" class="client-input">
+        <label class="client-label">Телефон
+          <input type="tel" name="client-tel" class="client-input">
           <svg class="input-icon">
             <use href="./images/icons.svg#phone"></use>
           </svg>
         </label>
-        <label for="client-email" class="client-label">Пошта
-          <input type="email" name="client-email" id="client-email" class="client-input">
+        <label class="client-label">Пошта
+          <input type="email" name="client-email" class="client-input">
           <svg class="input-icon">
             <use href="./images/icons.svg#envelope"></use>
           </svg>
         </label>
-        <label for="comment" class="client-label">
+        <label class="client-label">
           Коментар
-          <textarea name="comment" placeholder="Введіть текст" id="comment" class="client-text-area"></textarea>
+          <textarea name="comment" placeholder="Введіть текст" class="client-text-area"></textarea>
         </label>
-        <label for="agreement" class="agreement">
-          <input type="checkbox" name="agreement" value="yes" class="check-box-agreement" placeholder="" />
-          Погоджуюсь з розсилкою та приймаю
+
+
+        <div class="applybox">
+          <input type="checkbox" id="conditions" class="check" name="check" />
+
+          <label for="conditions" class="conditions"><span class="check-icon"></span>Погоджуюся з розсилкою та приймаю
+
+          </label>
           <a href="https://policies.google.com/terms?hl=uk" class="link terms-agreement" target="_blank"
             rel="noreferrer noopener">Умови
             договору</a>
-        </label>
+        </div>
+
+
         <button type="submit" class="send-btn">Відправити</button>
       </div>
     </div>
