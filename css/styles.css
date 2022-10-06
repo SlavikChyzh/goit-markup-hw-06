@@ -787,7 +787,7 @@ footer .logo-link {
 .order-service {
   display: flex;
   flex-direction: column;
-  margin: 40px;
+  padding: 40px;
 }
 .order-service p {
   font-weight: 700;
